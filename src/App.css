@@ -1,0 +1,19 @@
+body{
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.left-side-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side-header {
+  display: flex;
+  flex-direction: column;
+}
