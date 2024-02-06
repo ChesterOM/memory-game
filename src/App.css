@@ -11,9 +11,46 @@ body{
 .left-side-header {
   display: flex;
   flex-direction: column;
+  margin: 0 20px 0 20px;
 }
 
 .right-side-header {
   display: flex;
   flex-direction: column;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  aspect-ratio: 1 / 1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
 }
